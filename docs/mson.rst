@@ -4,7 +4,7 @@
 
 
 ======
-mson
+MSON
 ======
 
 
@@ -59,9 +59,12 @@ Miscellaneous Notes
 
 .. code-block:: js
 
-  CollectionField.get('form') // what does this do again?
+  CollectionField.get('form') // Gets the underlying mson object for the mson component in question. In this case, a CollectionField
   form.setValues // function to set fields on a document
   restore // restores an archived document?
   await CollectionField.setValues // what does this do? 
   form.getValues(); // get all fields for a document
   form.getValue('key'); // get one field from a document
+  .get(form.fields); // get all the fields of a mson component (the field of its underlying object)
+  mson-react/src/attach // attaches props to react UI rendering component
+  
