@@ -60,16 +60,16 @@ Its component field specifies that its type is CustomText. In order to display t
 
 The problem arises when you try to use a custom react component to display the custom mson component you've defined. If you have loaded mson-react as a dependency, it won't have access to your custom UI component.
 
-(1) fork the mson-react repo and use that as the starting point for your app or
+- fork the mson-react repo and use that as the starting point for your app or
 
-(2) leave mson-react intact, customizing just the components needed to display your custom UI components. This is the method I have chosen
+- leave mson-react intact, customizing just the components needed to display your custom UI components. This is the method I have chosen
 
-(3) there may be other means to do this, though I'm not sure yet what they might be.
+- there may be other means to do this, though I'm not sure yet what they might be.
 
 My Solution
 ~~~~~~~~~~~
 
-I chose to go with option 2, leaving mson-react intact, but borrowing parts of it so that the app could render my custom UI components. I have uploaded this to github in a repo called mson-custom-components you want to take a look at the source code. In fact, if you're reading this, chances are you've already found the repo.
+I chose to go with the second option, leaving mson-react intact, but borrowing parts of it so that the app could render my custom UI components. I have uploaded this to github in a repo called mson-custom-components you want to take a look at the source code. In fact, if you're reading this, chances are you've already found the repo.
 
 This solution overrides a few of mson-react files, specifically:
 
