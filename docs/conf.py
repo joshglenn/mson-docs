@@ -42,8 +42,8 @@ exclude_patterns = []
 
 root_for_relative_js_paths = './../../' # one level back to mson-docs folder
 js_source_path = [
-  'mson-react/src/fields',
-  'mson/src/fields'
+  '../mson-react/src/fields',
+  '../mson/src/fields'
 ]
 
 # -- Options for HTML output -------------------------------------------------
