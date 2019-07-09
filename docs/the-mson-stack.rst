@@ -15,3 +15,6 @@ As mentioned by Geoff (the creator of MSON), it is planned
 that MSON will have other UI layers in the future. For now, MSON-React, 
 which uses react and material-ui is the main UI layer.  
 
+If you are a programmer, and would like some technical insight into
+the design & archicture of MSON, check out this page: https://github.com/redgeoff/mson/blob/master/DESIGN.md 
+
