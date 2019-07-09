@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'mson-docs'
-copyright = '2019, Josh Glenn'
+copyright = '2019'
 author = 'Josh Glenn'
 
 # The full version, including alpha/beta/rc tags
