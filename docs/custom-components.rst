@@ -84,3 +84,19 @@ component.js       Changed to reference applicable files locally
 inner-component.js \* Add local sources when searching for render component
 render.js          Changed to reference applicable files locally
 ================== ========================================================
+
+
+
+componentUtils.getUIComponent(component);
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This function (from inner-component.js) takes a mson component as its parameter and returns the corresponding
+mson-react component for rendering.
+
+.. code-block:: js
+  
+  const Component = componentUtils.getUIComponent(component);
+
+`View on github <https://github.com/redgeoff/mson-react/blob/9c24283f8d8f0f722134f43fc6a74d3c0f34b785/src/inner-component.js#L59-L59)>`_
+
+

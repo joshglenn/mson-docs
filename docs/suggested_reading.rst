@@ -3,6 +3,8 @@
    :caption: Contents:
 
 
+.. _suggested-reading:
+
 ======
 Suggested Reading
 ======

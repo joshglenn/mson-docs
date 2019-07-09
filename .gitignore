@@ -1,1 +1,5 @@
 .DS_Store
+build
+mount_point_mson
+mount_point_mson_react
+docs/_build

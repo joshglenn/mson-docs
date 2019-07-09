@@ -1,15 +1,19 @@
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
-
-======
+####
 MSON
-======
+####
+
+.. contents: add a colon to turn contents back on
+
+THIS PAGE IS A STUB. 
+
+Though there isn't much information here at the moment, this page will be the main point
+for *reference* information about MSON. information
+on classes, functions, ways of making MSON do certain things. It will be documented here.
+
 
 
 CollectionField
-===========
+===============
 
 The CollectionField is a very useful component in mson. It supports the store component, which means it 
 can automatically store the objects it holds, in any mson store. It has add, remove, get, and update
@@ -20,6 +24,178 @@ With a CollectionField you can:
 - create an instance of the CollectionField using a mson definition.
 - use addForm to add one object to the list of items in the CollectionField
 - use removeForm to remove an object
+
+----
+
+Class and Function Definitions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. js:autoclass:: CollectionField
+  :members:
+
+  .. js:attribute:: schema.fields
+    
+    The fields property is an array of objects describing the CollectionField
+
+    .. code-block:: js
+
+      {
+        name: 'formFactory',
+        component: 'Field',
+        required: true
+      },
+      {
+        // Note: this prop is automatically generated using the formFactory and can be read, but
+        // should not be be set
+        name: 'form',
+        component: 'Field'
+      },
+      {
+        name: 'forbidCreate',
+        component: 'BooleanField'
+      },
+      {
+        name: 'forbidUpdate',
+        component: 'BooleanField'
+      },
+      {
+        name: 'forbidDelete',
+        component: 'BooleanField'
+      },
+      {
+        name: 'forbidViewArchived',
+        component: 'BooleanField'
+      },
+      {
+        name: 'forbidSearch',
+        component: 'BooleanField'
+      },
+      {
+        name: 'forbidSort', // set to true to lock items and forbid sorting
+        component: 'BooleanField'
+      },
+      {
+        name: 'forbidOrder', // set to true to lock items and forbid ordering
+        component: 'BooleanField'
+      },
+      {
+        name: 'minSize',
+        component: 'IntegerField'
+      },
+      {
+        name: 'maxSize',
+        component: 'IntegerField'
+      },
+      {
+        /** 
+         * What the objects in the CollectionField are called when referred to
+         * in the singular. If the CollectionField holds a list of contacts,
+         * for instance, the singularLabel would be **Contact**
+         */
+        name: 'singularLabel',
+        component: 'TextField'
+      },
+      {
+        /**
+         * The store that is used to store the data held in the CollectionField.
+         */
+        name: 'store',
+        component: 'Field'
+      },
+      {
+        name: 'scrollThreshold',
+        component: 'IntegerField'
+      },
+      {
+        name: 'itemsPerPage',
+        component: 'IntegerField'
+      },
+      {
+        name: 'maxBufferPages',
+        component: 'IntegerField'
+      },
+      {
+        name: 'spacerHeight',
+        component: 'IntegerField'
+      },
+      {
+        name: 'spacerId',
+        component: 'TextField'
+      },
+      {
+        name: 'bufferTopId',
+        component: 'TextField'
+      },
+      {
+        name: 'isLoading',
+        component: 'BooleanField'
+      },
+      {
+        name: 'order',
+        component: 'Field'
+      },
+      {
+        name: 'currentForm',
+        component: 'Field'
+      },
+      {
+        name: 'mode',
+        component: 'TextField'
+      },
+      {
+        name: 'noResults',
+        component: 'BooleanField'
+      },
+      {
+        name: 'pristine',
+        component: 'BooleanField'
+      },
+      {
+        name: 'change',
+        component: 'Field'
+      },
+      {
+        name: 'maxColumns',
+        component: 'IntegerField'
+      },
+      {
+        name: 'skipRead',
+        component: 'BooleanField'
+      },
+      {
+        name: 'includeExtraneous',
+        component: 'BooleanField'
+      }
+
+
+    .. js:attribute:: formFactory
+
+      The formFactory component that is used to generate the Form objects that
+      the CollectionField holds
+
+
+    .. js:attribute:: form
+
+      A readonly property. this prop is automatically generated using
+      the formFactory and can be read, but should not be be set. 
+
+
+    .. js:attribute:: forbidCreate
+
+      A BooleanField property. When set to true, the CollectionField may not be used
+      to create new records.
+
+
+    .. js:attribute:: forbidUpdate
+
+      A BooleanField property. When set to true, the CollectionField will not update records. 
+
+    .. js:attribute:: fields
+
+
+----
+
+(manualy generated doc)
 
 .. js:function:: addForm(object)
 
@@ -67,4 +243,11 @@ Miscellaneous Notes
   form.getValue('key'); // get one field from a document
   .get(form.fields); // get all the fields of a mson component (the field of its underlying object)
   mson-react/src/attach // attaches props to react UI rendering component
-  
+
+
+
+
+
+
+
+

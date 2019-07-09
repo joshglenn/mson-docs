@@ -3,39 +3,29 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to mson-docs's documentation!
-=====================================
 
-What Is MSON?
-*************
+NOTE: This documentation is in its infancy. Please bear with us as we work to make it more complete.
 
-MSON is, at first glance, a framework for building web applications. However, it is actually closer to a full fledged 
-programming language. It allows people with relatively little knowledge of programming to build an application
-quickly. It can then be left as-is or extended for a wide range of purposes.
-
-To read more about it, checkout the suggested reading here:
-
-What Can MSON Do For Me?
-*********
-
-With the MSON and MSON-React stack, you can spin up an entire data-driven web application very quickly.
 
 .. toctree::
-   :maxdepth: 2
+   :hidden:
+   :maxdepth: 1
    :caption: Contents:
 
+   what-is-mson
+   what-can-mson-do-for-me
+   the-mson-stack
    mson
    mson-react
    custom-components
    suggested_reading
+   indices
    //page_1
    //rst_cheatsheet
 
+.. _`Geoff Cox`: https://github.com/redgeoff
 
+.. _`MSON-React`: https://github.com/redgeoff/mson-react
 
-Indices and tables
-==================
+.. _`MSON`: https://github.com/redgeoff/mson
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
