@@ -69,7 +69,7 @@ The problem arises when you try to use a custom react component to display the c
 My Solution
 ~~~~~~~~~~~
 
-I chose to go with the second option, leaving mson-react intact, but borrowing parts of it so that the app could render my custom UI components. I have uploaded this to github in a repo called mson-custom-components you want to take a look at the source code. In fact, if you're reading this, chances are you've already found the repo.
+I chose to go with the second option, leaving mson-react intact, but borrowing parts of it so that the app could render my custom UI components. I have uploaded this to github in a repo called `mson-custom-components <https://github.com/joshglenn/mson-custom-components)>`_ you want to take a look at the source code. In fact, if you're reading this, chances are you've already found the repo.
 
 This solution overrides a few of mson-react files, specifically:
 
@@ -97,6 +97,6 @@ mson-react component for rendering.
   
   const Component = componentUtils.getUIComponent(component);
 
-`View on github <https://github.com/redgeoff/mson-react/blob/9c24283f8d8f0f722134f43fc6a74d3c0f34b785/src/inner-component.js#L59-L59)>`_
+
 
 
