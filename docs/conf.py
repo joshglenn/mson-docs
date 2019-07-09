@@ -40,7 +40,7 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
-root_for_relative_js_paths = './../../' # one level back to mson-docs folder
+root_for_relative_js_paths = '../' # one level back to mson-docs folder
 js_source_path = [
   '../mson-react/src/fields',
   '../mson/src/fields'
