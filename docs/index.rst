@@ -104,7 +104,7 @@ that lets you manage a to-do list.
 
 .. toctree::
    :hidden:
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Contents:
 
    what-is-mson
